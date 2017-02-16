@@ -1,0 +1,31 @@
+body {
+	background-color: #111111;
+}
+
+h1, h3, span {
+	color: #FFFFFF;
+}
+
+#droppable {
+	display: flex;
+	width: 200px;
+	height: 200px;
+	border: 2px dashed #FF9C09;
+	justify-content: center;
+}
+
+span {
+	align-self: center;
+}
+
+#locationsOnFile {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.map {
+	border: 2px solid #000000;
+	margin: 20px;
+	width: 500px;
+	height: 500px;
+ }

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Geolocation</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>meter<color style="color: #FF9C09;">.</color></h1>
+		</header>
+		<main>
+			<section id="droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<span id="droppable-text">drop here</span>
+			</section>
+			<h3>Your current location</h3>
+			<div id="curLocation" class="map"></div>
+			<h3>Locations on file</h3>
+			<div id="locationsOnFile"></div>
+		</main>
+		<script src="location.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjvE18u3mbUrMqJQk7M_XSGlLJkbmnv5c"></script>
+	</body>
+</html>
