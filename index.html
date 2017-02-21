@@ -10,13 +10,18 @@
 			<h1>meter<color style="color: #FF9C09;">.</color></h1>
 		</header>
 		<main>
-			<section id="droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
-				<span id="droppable-text">drop here</span>
+			<h3>Your location</h3>
+			<section id="locationChooser">
+				<section id="switch" onclick="toggle()"></section>
+				<input id="search-bar" type="text" name="city-search" />
+				<input id="submit" type="submit" name="submit" onclick="submit()" value="submit"/>
 			</section>
-			<h3>Your current location</h3>
-			<div id="curLocation" class="map"></div>
+			<section id="curLocation" class="map"></section>
+			<section id="droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<span id="droppable-text">drop file with other locations here</span>
+			</section>
 			<h3>Locations on file</h3>
-			<div id="locationsOnFile"></div>
+			<section id="locationsOnFile"></section>
 		</main>
 		<script src="location.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjvE18u3mbUrMqJQk7M_XSGlLJkbmnv5c"></script>

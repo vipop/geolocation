@@ -2,20 +2,43 @@ body {
 	background-color: #111111;
 }
 
-h1, h3, span {
+h1, h3 {
 	color: #FFFFFF;
+	width: 100%;
+}
+
+header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1088px;
+}
+
+main {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1088px;
+}
+
+#locationChooser {
+	display: flex;
+	margin: 20px;
+	width: 1048px;
 }
 
 #droppable {
 	display: flex;
-	width: 200px;
-	height: 200px;
+	width: 500px;
+	height: 500px;
 	border: 2px dashed #FF9C09;
 	justify-content: center;
+	margin: 20px;
 }
 
 span {
 	align-self: center;
+	color: #FFFFFF;
 }
 
 #locationsOnFile {
@@ -28,4 +51,78 @@ span {
 	margin: 20px;
 	width: 500px;
 	height: 500px;
+ }
+
+ #search-bar {
+ 	width: 70%;
+    border: none;
+    height: 26px;
+    border-radius: 3pt;
+    font-size: 16pt;
+    padding: 10px;
+ 	outline: none;
+ 	display: block;
+ }
+
+ #search-bar:disabled {
+	 color: #545454;
+ }
+
+ #submit {
+ 	width: 170px;
+ 	border-radius: 3pt;
+ 	background-color: #FF9C09;
+ 	font-size: 16pt;
+ 	outline: none;
+ 	margin-left: 10px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	color: #FFFFFF;
+ 	display: block;
+ 	border: none;
+ 	cursor: pointer;
+ }
+
+ #submit:disabled {
+  	width: 170px;
+  	border-radius: 3pt;
+  	background-color: rgb(235, 235, 228);
+  	font-size: 16pt;
+  	outline: none;
+  	margin-left: 10px;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	color: #545454;
+  	display: block;
+  	border: none;
+  	cursor: pointer;
+ }
+
+ #switch {
+   	width: 170px;
+   	border-radius: 3pt;
+   	background-color: #FF9C09;
+   	font-size: 16pt;
+   	outline: none;
+   	margin-right: 10px;
+   	padding-top: 10px;
+   	padding-bottom: 10px;
+   	color: #FFFFFF;
+   	display: block;
+   	border: none;
+   	cursor: pointer;
+	text-align: center;
+ }
+
+ .calc {
+	width: 170px;
+  	border-radius: 3pt;
+  	background-color: #FF9C09;
+  	font-size: 16pt;
+  	outline: none;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	color: #FFFFFF;
+  	border: none;
+  	cursor: pointer;
  }
